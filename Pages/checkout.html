@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="checkout-container">
+
+        <!-- 🟢 LEFT: SHIPPING FORM -->
+        <div class="checkout-form-box">
+            <h2>Shipping Details</h2>
+
+            <div class=" checkout-input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter phone number">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>City</label>
+                <input type="text" placeholder="Enter city">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>State</label>
+                <input type="text" placeholder="Enter state">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>Pincode</label>
+                <input type="text" placeholder="Enter pincode">
+            </div>
+
+            <div class="checkout-input-group">
+                <label>Full Address</label>
+                <textarea placeholder="Enter full address"></textarea>
+            </div>
+
+        </div>
+
+        <!-- 🟢 RIGHT: ORDER SUMMARY -->
+        <div class="checkout-summary-box">
+
+            <h3>Order Summary</h3>
+
+            <!-- 🔥 list container -->
+            <ul id="orderList"></ul>
+
+            <p class="checkout-total" id="totalPrice"></p>
+
+            <button class="place-btn" onclick="placeOrder()">Place Order</button>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/checkout.js"></script>
+
+</body>
+
+</html>

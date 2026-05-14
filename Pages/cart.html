@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="cart-header">
+        <h2>My Cart</h2>
+        <a href="index.html" style="color:white;">Home</a>
+    </div>
+
+    <div class="cart-container">
+
+        <!-- ITEMS -->
+        <div class="cart-items">
+
+            <div class="cart-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                <div class="cart-info">
+                    <h4>Product Name</h4>
+                    <p>$0</p>
+                </div>
+
+                <div class="cart-actions">
+                    <button class="remove-btn" id="remove-btn">Remove</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="summary">
+            <h3>Order Summary</h3>
+            <p>Total: $0</p>
+            <button class="checkout-btn" id="checkout-btn"  onclick="goToOrder()">Checkout</button>
+        </div>
+
+    </div>
+    <script src="../JS/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <span id="userText"></span>
+                <button class="authBtn" type="button" onclick="handleAuth()">Login</button>
+                <!-- <button id="authBtn" type="button" onclick="handleAuth()">Login</button> -->
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <button class="micBtn" id="voiceBtn"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <div class="categories" id="categories">
+            <button class="category-btn" data-category="electronics">Electronics</button>
+            <button class="category-btn" data-category="jewelery">Jewellery</button>
+            <button class="category-btn" data-category="men's clothing">Men's Clothing</button>
+            <button class="category-btn" data-category="women's clothing">Women's Clothing</button>
+            <button class="category-btn" data-category="shoes">Shoes</button>
+            <button class="category-btn" data-category="accessories">Accessories</button>
+            <button class="category-btn" data-category="food items">Food Items</button>
+        </div>
+    </header>
+
+    <!-- Banner section -->
+    <section class="banner">
+        <img src="../images/products-banner.png" alt="Banner Image">
+    </section>
+
+    <!-- all products -->
+    <h2 style="text-align:center; margin:10px; font-size: 30px;">All Products</h2>
+
+    <div id="allProductsContainer" class="all-product-grid"></div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>ShopEase</strong>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/app.js"></script>
+    <script src="../JS/navbar.js"></script>
+</body>
+
+</html>
